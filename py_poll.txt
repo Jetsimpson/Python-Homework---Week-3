@@ -1,0 +1,40 @@
+import csv
+import os
+total_votes = 0
+list_of_candidates = ('Correy, Khan,Li, O'Tooley')
+percentage_votes = 0%
+total_win_candidate = 0
+winner_of_election = ['Correy,khan,Li,O'Tooley']
+popular_vote= 0
+
+
+file_to_load = ("Resources",Homework_03-Python_Instructions_PyPoll_Resources_election_data (1).csv)
+with open (file_to_load)as data:
+    reader = csv.reader(data)
+    header = next (reader)
+    first_row = next (reader)
+    total_votes = total_votes +1
+    total_win_candidate = total_win_candidate+ int (first_row[1])
+    percentage_votes = percentage_votes + int(first_row[1])
+
+
+ for row in reader:
+    print(row)
+    total_votes=total_votes+1
+    list_of_candidates= ('Correy,Khan'Li,O'Tooley)
+    # candidates the winner
+    total_win_candidate = total_win_candidate+ int(first_row[1])
+    percentage_votes= percentage_votes+ int(first_row[1])
+    if total_win_candidate > list_of_candidates
+        total_win_candidate[0]= row [0]
+        total_win_candidate[1] = total_win_candidate
+    # calculate the percentage
+   if  percentage_votes > list_of_candidates
+    percentage_votes[0] = row[0]
+    percentage_votes[1]= winner_of_election
+print(total_votes)
+print(total_win_candidate)
+print(list_of_candidates)
+print(percentage_votes)
+print(popular_vote)
+print(winner_of_election)
